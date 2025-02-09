@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e6f2e6; /* Verde claro para fundo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    height: 100%;
+    background-color: #2c5f2d; /* Verde escuro */
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #fff8dc; /* Bege claro para contraste */
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4a772f; /* Verde médio para realce */
+}
+
+/* Conteúdo */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; /* Move o conteúdo para cima */
+    text-align: center;
+    padding: 20px;
+    margin-left: 60px;
+    transition: margin-left 0.3s ease;
+    background-color: #f0f8f0; /* Verde muito claro para suavidade */
+}
+
+/* Ajuste do deslocamento quando o menu expande */
+.sidebar:hover ~ .content {
+    margin-left: 200px;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px; /* Move o título para cima */
+    margin-bottom: 30px;
+    color: #3e4d2f; /* Marrom escuro */
+}
+/* Container de imagens */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Caixas de imagens mais modernas */
+.image-box {
+    width: 800px;
+    height: 600px;
+    background-color: #d4a373; /* Marrom claro */
+    border: 3px solid #8b5a2b; /* Marrom médio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #4a3222; /* Marrom escuro */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave */
+}
+
+/* Efeito ao passar o mouse */
+.image-box:hover {
+    transform: scale(1.03); /* Aumenta levemente o tamanho */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}

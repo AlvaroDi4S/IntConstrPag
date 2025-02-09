@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2e6; /* Verde claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f0f8f0; /* Verde muito claro */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #3e4d2f; /* Marrom escuro */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #4a3222; /* Marrom escuro */
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #8b5a2b; /* Marrom médio */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #2c5f2d; /* Verde escuro */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4a772f; /* Verde médio */
+}
+
+/* Estilização do botão de voltar */
+.voltar-btn {
+    background-color: #8b5a2b; /* Marrom médio */
+}
+
+.voltar-btn:hover {
+    background-color: #a36a3d; /* Marrom mais claro */
+}
